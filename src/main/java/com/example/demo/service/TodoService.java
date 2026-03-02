@@ -1,8 +1,10 @@
-package com.example.demo.service;
+﻿package com.example.demo.service;
 
 import com.example.demo.mapper.TodoMapper;
 import com.example.demo.model.Todo;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class TodoService {
@@ -11,6 +13,10 @@ public class TodoService {
 
     public TodoService(TodoMapper todoMapper) {
         this.todoMapper = todoMapper;
+    }
+
+    public List<Todo> findAll() {
+        return todoMapper.findAll();
     }
 
     public void create(String title) {
