@@ -24,7 +24,7 @@ public class TodoController {
 
     @GetMapping("/new")
     public String showNewForm() {
-        return "todo/new";
+        return "todo/form";
     }
 
     @GetMapping("/confirm")
