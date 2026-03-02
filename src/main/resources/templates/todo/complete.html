@@ -14,7 +14,8 @@
             <div class="card shadow-sm text-center">
                 <div class="card-body p-5">
                     <h1 class="h4 mb-3">登録が完了しました</h1>
-                    <p class="text-secondary mb-4">ToDoが正常に登録されました。</p>
+                    <p class="text-secondary mb-2">ToDoが正常に登録されました。</p>
+                    <p class="mb-4"><span class="text-secondary">タイトル:</span> <span class="fw-semibold" th:text="${title}">サンプルタスク</span></p>
                     <a class="btn btn-primary" th:href="@{/todo}">一覧へ戻る</a>
                 </div>
             </div>
