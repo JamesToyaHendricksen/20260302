@@ -1,4 +1,4 @@
-package com.example.demo.mapper;
+﻿package com.example.demo.mapper;
 
 import com.example.demo.model.Todo;
 
@@ -11,6 +11,8 @@ public interface TodoMapper {
     Todo findById(Long id);
 
     int insert(Todo todo);
+
+    int update(Todo todo);
 
     int deleteById(Long id);
 }
